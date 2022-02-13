@@ -79,8 +79,6 @@ header .container {
 
 .brandLeft {
     width: 50%;
-    display: flex;
-    align-items: flex-end;
 }
 
 .brandLeft img {
@@ -88,7 +86,7 @@ header .container {
     width: 100%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 767px) {
     .brandLeft {
         display: none;
     }
@@ -101,7 +99,7 @@ header .container {
     justify-content: center;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 768px) {
     .brandRight {
         width: 50%;
     }
@@ -136,6 +134,9 @@ h1 > span {
 }
 
 @media (min-width: 1140px) {
+    .brandRight {
+        justify-content: left;
+    }
     h1 {
         font-size: 48px;
         line-height: 48px;
@@ -146,4 +147,53 @@ h1 > span {
     }
 }
 
+.productCategories {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 247px) 111px;
+    row-gap: 32px;
+    padding: 64px 16px;
+}
+
+@media (min-width: 768px) {
+    .productCategories {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 167px 116px;
+        gap: 20px;
+    }
+    .accesoriesCover {
+        grid-column: 1/-1;
+    }
+}
+
+.productCategories section {
+    position: relative;
+}
+
+.productCategories img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    top: 0;
+}
+
+.CategoriesTitle {
+    position: relative;
+    z-index: 1;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.CategoriesTitle span {
+    font-size: 24px;
+    font-weight: 700;
+}
 
