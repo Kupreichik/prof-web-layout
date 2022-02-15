@@ -197,3 +197,148 @@ h1 > span {
     font-weight: 700;
 }
 
+.FeaturedItemsBlock{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+@media (min-width: 540px) {
+    .FeaturedItemsBlock {
+        margin-top: 90px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .FeaturedItemsText {
+        margin-bottom: 74px;
+    }
+}
+
+@media (min-width: 880px) {
+    .FeaturedItemsBlock {
+        margin-top: 32px;
+    }
+
+    .FeaturedItemsText {
+        margin-bottom: 57px;
+    }
+}
+
+.FeaturedItemsBlock h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 3px;
+    font-weight: 400;
+}
+
+.FeaturedItemsText {
+    text-align: center;
+    font-size: 14px;
+    color: #9F9F9F;
+    margin-bottom: 64px;
+}
+
+.FeaturedItemS {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+}
+
+@media (min-width: 540px) {
+    .FeaturedItemS {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 18px
+    }
+}
+
+@media (min-width: 1000px) {
+    .FeaturedItemS {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+.FeaturedItem {
+    background-color: #F8F8F8;
+}
+
+.FeaturedImgWrap img {
+    width: 100%;
+}
+
+.FeaturedImgWrap {
+    position: relative;
+}
+
+.FeaturedItem:hover .FeaturedDarkCover {
+    display: flex;
+}
+
+.FeaturedDarkCover {
+    position: absolute;
+    background: rgba(58, 56, 56, 0.86);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.FeaturedDarkCover button {
+    color: #FFFFFF;
+    background: none;
+    border: 1px solid white;
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+    padding: 10px 13px;
+}
+
+.FeaturedDarkCover button img {
+    Width: 26px; 
+    Height: 24px;
+    padding-right: 11px;
+}
+
+.FeaturedDescription {
+    padding: 25px 16px 20px 16px;
+}
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+.FeaturedDescription p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #5D5D5D;
+}
+
+.BrowseAllButton {
+    font-family: inherit;
+    color: #F26376;
+    border: 1px solid #F26376;
+    font-size: 16px;
+    padding: 14px 38px;
+    margin: 41px auto 96px auto;
+    display: block;
+    background: none;
+}
+
+.BrowseAllButton:hover {
+    background: #F26376;
+    color: white;
+}
+
+@media (min-width: 540px) and (max-width: 880px) {
+    .BrowseAllButton {
+        margin-top: 32px;
+        margin-bottom: 65px;
+    }
+}
