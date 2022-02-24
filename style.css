@@ -29,6 +29,12 @@ header .container {
     padding-right: 16px;
   }
 }
+@media (min-width: 1156px) {
+  header .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 @media (min-width: 1140px) {
   .container {
@@ -627,16 +633,107 @@ h4 {
     justify-content: space-between;
   }
 }
+@media (min-width: 1056px) {
+  .arrivals .container {
+    padding: 0;
+  }
+}
 
 .filter {
   display: flex;
   flex-direction: row;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding: 26px 8px 40px 8px;
   justify-content: space-between;
 }
-.filter .filterLeft span, .filter .filterRed {
+@media (min-width: 540px) {
+  .filter {
+    padding: 26px 16px 40px 16px;
+  }
+}
+@media (min-width: 1024px) {
+  .filter {
+    padding: 51px 0 65px 16px;
+    justify-content: flex-start;
+  }
+}
+.filter .filterLeft {
+  font-size: 14px;
+}
+.filter .filterTitle {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 1024px) {
+  .filter .filterTitle {
+    margin-right: 304px;
+  }
+}
+.filter .filterSpan {
   display: none;
+}
+@media (min-width: 540px) {
+  .filter .filterSpan {
+    display: inline-block;
+    margin-right: 11px;
+  }
+}
+.filter .filterLeft:hover .FilterMenu {
+  display: block;
+  z-index: 1;
+}
+.filter .FilterMenu {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 360px;
+  padding: 13px 17px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 248px;
+  display: none;
+}
+@media (max-width: 640px) {
+  .filter .FilterMenu {
+    width: 300px;
+  }
+}
+.filter .FilterMenu span {
+  margin-right: 11px;
+}
+.filter .filterMenuItem {
+  color: #6F6E6E;
+  border-left: #EF5B70 solid 5px;
+  border-bottom: 1px solid #EBEBEB;
+  padding-left: 11px;
+  line-height: 37px;
+  margin-top: 18px;
+}
+.filter .filterMenuCategory, .filter .filterMenuBrand, .filter .filterMenuDesiner {
+  padding-left: 16px;
+  display: none;
+}
+.filter .filterMenuCategory a, .filter .filterMenuBrand a, .filter .filterMenuDesiner a {
+  text-decoration: none;
+  color: #6F6E6E;
+  line-height: 25px;
+}
+.filter .ItemCategory:hover .filterMenuCategory {
+  display: block;
+}
+.filter .ItemCategory:hover .filterMenuItem {
+  color: #EF5B70;
+}
+.filter .ItemBrand:hover .filterMenuBrand {
+  display: block;
+}
+.filter .ItemBrand:hover .filterMenuItem {
+  color: #EF5B70;
+}
+.filter .ItemDesigner:hover .filterMenuDesiner {
+  display: block;
+}
+.filter .ItemDesigner:hover .filterMenuItem {
+  color: #EF5B70;
 }
 .filter .filterRight {
   color: #6F6E6E;
@@ -645,20 +742,31 @@ h4 {
   flex-direction: row;
 }
 .filter .filterRight img {
-  margin-left: 9px;
+  margin-left: 7px;
+}
+@media (min-width: 540px) {
+  .filter .filterRight img {
+    margin-left: 10px;
+  }
 }
 .filter .filterRight div:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 17px;
+}
+@media (min-width: 540px) {
+  .filter .filterRight div:not(:last-child) {
+    margin-right: 28px;
+  }
 }
 .filter .inputSizes {
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   width: 79px;
-  padding-left: 10px;
+  padding: 6px 10px;
   box-sizing: border-box;
   display: none;
   position: absolute;
   top: 26px;
+  line-height: 18px;
 }
 .filter div.filterSize {
   position: relative;
