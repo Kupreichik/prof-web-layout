@@ -166,7 +166,7 @@ h1 > span {
     }
 }
 
-.productCategories section {
+.productCategories .section {
     position: relative;
 }
 
