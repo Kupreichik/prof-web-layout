@@ -29,7 +29,7 @@ header .container {
     padding-right: 16px;
   }
 }
-@media (min-width: 1156px) {
+@media (min-width: 1172px) {
   header .container {
     padding-left: 0;
     padding-right: 0;
@@ -633,7 +633,7 @@ h4 {
     justify-content: space-between;
   }
 }
-@media (min-width: 1056px) {
+@media (min-width: 1172px) {
   .arrivals .container {
     padding: 0;
   }
@@ -666,7 +666,13 @@ h4 {
 }
 @media (min-width: 1024px) {
   .filter .filterTitle {
-    margin-right: 304px;
+    margin-right: 290px;
+  }
+}
+@media (min-width: 540px) {
+  .filter .filterTitle img {
+    width: 15px;
+    height: 10px;
   }
 }
 .filter .filterSpan {
@@ -741,6 +747,11 @@ h4 {
   display: flex;
   flex-direction: row;
 }
+@media (min-width: 540px) {
+  .filter .filterRight {
+    font-size: 14px;
+  }
+}
 .filter .filterRight img {
   margin-left: 7px;
 }
@@ -773,7 +784,69 @@ h4 {
 }
 .filter .filterSize:hover .inputSizes {
   display: block;
+  z-index: 1;
 }
 .filter .filterSize:hover .inputSizes .inputSizes:hover {
   display: block;
+  z-index: 1;
+}
+
+.arrivalsCards {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+@media (min-width: 540px) {
+  .arrivalsCards {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (min-width: 1000px) {
+  .arrivalsCards {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+}
+@media (min-width: 1172px) {
+  .arrivalsCards {
+    padding: 0;
+  }
+}
+.arrivalsCards .FeaturedItem:nth-child(3) {
+  display: none;
+}
+@media (min-width: 1000px) {
+  .arrivalsCards .FeaturedItem:nth-child(3) {
+    display: block;
+  }
+}
+
+.pagination {
+  width: 284px;
+  height: 44px;
+  border: 1px solid #EBEBEB;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-sizing: border-box;
+  margin: 40px auto 64px auto;
+  font-size: 16px;
+  line-height: 44px;
+}
+@media (min-width: 1000px) {
+  .pagination {
+    margin: 48px auto 96px auto;
+  }
+}
+.pagination a {
+  text-decoration: none;
+  color: #EBEBEB;
+}
+.pagination a:hover {
+  color: #EF5B70;
 }/*# sourceMappingURL=style.css.map */
