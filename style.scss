@@ -79,9 +79,9 @@ header .container {
 }
 
 @media (max-width: 425px) {
-   .userIcons {
-       display: none;
-   } 
+    .userIcons {
+        display: none;
+    } 
 }
 
 .brand {
@@ -262,7 +262,7 @@ header .container {
     .FeaturedItemS {
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
-        row-gap: 18px
+        row-gap: 18px;
     }
 }
 
@@ -312,8 +312,8 @@ header .container {
 }
 
 .FeaturedDarkCover button img {
-    Width: 26px; 
-    Height: 24px;
+    width: 26px;
+    height: 24px;
     padding-right: 11px;
 }
 
