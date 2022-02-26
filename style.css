@@ -15,22 +15,22 @@ header {
 
 @media (min-width: 768px) {
     header {
-    padding-left: 32px;
-    padding-right: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
     }
 }
 
 header .container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (min-width: 1140px) {
     .container {
         width: 1140px;
         margin: 0 auto;
-    } 
+    }
 }
 
 .searchIcon {
@@ -66,9 +66,9 @@ header .container {
 }
 
 @media (max-width: 425px) {
-   .userIcons {
-       display: none;
-   } 
+    .userIcons {
+        display: none;
+    }
 }
 
 .brand {
@@ -112,9 +112,9 @@ h1 {
     padding-left: 16px;
     font-size: 38px;
     line-height: 38px;
-}    
+}
 
-h1 > span {
+h1>span {
     font-weight: 700;
     font-size: 20px;
 }
@@ -127,8 +127,9 @@ h1 > span {
     h1 {
         font-size: 44px;
         line-height: 44px;
-        }
-    h1 > span {
+    }
+
+    h1>span {
         font-size: 24px;
     }
 }
@@ -137,12 +138,14 @@ h1 > span {
     .brandRight {
         justify-content: left;
     }
+
     h1 {
         font-size: 48px;
         line-height: 48px;
         margin-left: 64px;
     }
-    h1 > span {
+
+    h1>span {
         font-size: 37px;
     }
 }
@@ -161,12 +164,13 @@ h1 > span {
         grid-template-rows: 167px 116px;
         gap: 20px;
     }
+
     .accesoriesCover {
         grid-column: 1/-1;
     }
 }
 
-.productCategories > .section {
+.productCategories>.section {
     position: relative;
 }
 
@@ -197,7 +201,7 @@ h1 > span {
     font-weight: 700;
 }
 
-.FeaturedItemsBlock{
+.FeaturedItemsBlock {
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -249,7 +253,7 @@ h1 > span {
     .FeaturedItemS {
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
-        row-gap: 18px
+        row-gap: 18px;
     }
 }
 
@@ -299,8 +303,8 @@ h1 > span {
 }
 
 .FeaturedDarkCover button img {
-    Width: 26px; 
-    Height: 24px;
+    width: 26px;
+    height: 24px;
     padding-right: 11px;
 }
 
