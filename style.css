@@ -875,30 +875,179 @@ h4 {
   height: 47px;
   background-color: rgba(42, 42, 42, 0.15);
   display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: calc(50% - 23.5px);
-}
-.product .arrow {
-  width: 16px;
-  height: 16px;
-  border-left: 4px solid #000000;
-  border-bottom: 4px solid #000000;
-  margin: auto;
-}
-.product .arrow-left .arrow {
-  transform: rotate(45deg);
-}
-.product .arrow-left:hover .arrow {
-  border-left: 4px solid #F16D7F;
-  border-bottom: 4px solid #F16D7F;
 }
 .product .arrow-right {
   right: 0;
 }
-.product .arrow-right .arrow {
-  transform: rotate(-135deg);
+.product .arrow-left:hover {
+  color: #F16D7F;
 }
-.product .arrow-right:hover .arrow {
-  border-left: 4px solid #F16D7F;
-  border-bottom: 4px solid #F16D7F;
+.product .arrow-right:hover {
+  color: #F16D7F;
+}
+
+.productDeskription {
+  text-align: center;
+  font-weight: 300;
+  padding: 65px 17px;
+  border-bottom: 1px solid #EAEAEA;
+}
+@media (min-width: 1200px) {
+  .productDeskription {
+    width: 1140px;
+    box-sizing: border-box;
+    border: 1px solid #EAEAEA;
+    position: absolute;
+    top: 798px;
+    background: #FFFFFF;
+    left: calc(50% - 570px);
+  }
+}
+.productDeskription h2 {
+  font-size: 14px;
+  font-weight: 300;
+  color: #F16D7F;
+  margin-top: 0;
+}
+.productDeskription .productCollectionDevider {
+  width: 63px;
+  border: 2px solid #EF5B70;
+}
+.productDeskription h3 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #4D4D4D;
+  margin-top: 12px;
+  margin-bottom: 32px;
+}
+@media (min-width: 540px) {
+  .productDeskription h3 {
+    margin-bottom: 48px;
+  }
+}
+.productDeskription .productDeskriptionText {
+  font-size: 14px;
+  color: #5E5E5E;
+  max-width: 555px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.productDeskription .productDeskriptionPrice {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  font-size: 24px;
+  color: #EF5B70;
+}
+.productDeskription .productDeskriptionDevider {
+  border: 1px solid #EAEAEA;
+  width: 175px;
+  margin-bottom: 50px;
+}
+@media (min-width: 700px) {
+  .productDeskription .productDeskriptionDevider {
+    width: 641px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+  }
+}
+.productDeskription .productChoosing {
+  color: #6F6E6E;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+@media (min-width: 540px) {
+  .productDeskription .productChoosing {
+    font-size: 14px;
+  }
+}
+.productDeskription .productChoosing img {
+  margin-left: 7px;
+}
+@media (min-width: 540px) {
+  .productDeskription .productChoosing img {
+    margin-left: 10px;
+  }
+}
+.productDeskription .productChoosing div:not(:last-child) {
+  margin-right: 17px;
+}
+@media (min-width: 540px) {
+  .productDeskription .productChoosing div:not(:last-child) {
+    margin-right: 23px;
+  }
+}
+.productDeskription .inputSizes {
+  background: #FFFFFF;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  width: 79px;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  top: 18px;
+  line-height: 18px;
+  text-align: left;
+}
+.productDeskription div.filterSize {
+  position: relative;
+}
+.productDeskription .filterSize:hover .inputSizes {
+  display: block;
+  z-index: 1;
+}
+.productDeskription .filterSize:hover .inputSizes .inputSizes:hover {
+  display: block;
+  z-index: 1;
+}
+.productDeskription .AddToCartBtn {
+  width: 211px;
+  height: 47px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: #FFFFFF;
+  border: 1px solid #FF6A6A;
+  color: #F26376;
+  display: flex;
+  margin: 65px auto 0;
+  align-items: center;
+}
+.productDeskription .AddToCartBtn img {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+.productDeskription .AddToCartBtn .cartLight {
+  display: none;
+}
+.productDeskription .AddToCartBtn:hover {
+  background-color: #F26376;
+  color: #FFFFFF;
+}
+.productDeskription .AddToCartBtn:hover .cartLight {
+  display: block;
+}
+.productDeskription .AddToCartBtn:hover .cartPink {
+  display: none;
+}
+
+.productFeaturedItems {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+@media (min-width: 540px) {
+  .productFeaturedItems {
+    margin-top: 129px;
+    margin-bottom: 128px;
+  }
+}
+@media (min-width: 1200px) {
+  .productFeaturedItems {
+    margin-top: 665px;
+  }
 }/*# sourceMappingURL=style.css.map */
