@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3c9a0c818.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="leftBar">
+                <img src="img/logo.svg" alt="logo">
+                <img class="searchIcon" src="img/search.svg" alt="search">
+            </div>
+            <nav>
+                <img src="img/bars.svg" alt="bars">
+                <img class="userIcons" src="img/user.svg" alt="user">
+                    <span class="cartIconWrap">
+                        <img class="userIcons cart" src="img/cart.svg" alt="cart">
+                        <span class="userIcons">5</span>
+                    </span>
+            </nav>
+        </div>
+    </header>
+    <div class="cartTitle">
+        <div class="container">
+            <h1>SHOPPING CART</h1>
+        </div>
+    </div>
+    <div class="catrMain container">
+        <div class="cartBlock">
+            <div class="cartContents">
+                <div class="b-productInCart">
+                    <img class="b-productInCart__img b-productInCart__img_width" src="img/featured/3.jpg" alt="">
+                    <div class="b-productInCart__description b-productInCart__description_size b-productInCart__description_color">
+                        <div class="b-productInCart__name b-productInCart__name_size b-productInCart__name_color">MANGO  PEOPLE<br>T-SHIRT</div>
+                        <div class="b-productInCart__price">Price: <span class="b-productInCart__price_pink">$300</span></div>
+                        <div class="b-productInCart__color">Color: Red</div>
+                        <div class="b-productInCart__size">Size: Xl</div>
+                        <div class="b-productInCart__quantity">Quantity:
+                            <input class="b-productInCart__input b-productInCart__input_size" type="number" value="2"></div>
+                    </div>
+                    <img class="b-productInCart__closeBtn b-productInCart__closeBtn_size" src="img/close.svg" alt="">
+                </div>
+                <div class="b-productInCart">
+                    <img class="b-productInCart__img b-productInCart__img_width" src="img/featured/1-2.jpg" alt="">
+                    <div class="b-productInCart__description b-productInCart__description_size b-productInCart__description_color">
+                        <div class="b-productInCart__name b-productInCart__name_size b-productInCart__name_color">MANGO  PEOPLE<br>T-SHIRT</div>
+                        <div class="b-productInCart__price">Price: <span class="b-productInCart__price_pink">$300</span></div>
+                        <div class="b-productInCart__color">Color: Red</div>
+                        <div class="b-productInCart__size">Size: Xl</div>
+                        <div class="b-productInCart__quantity">Quantity:
+                            <input class="b-productInCart__input b-productInCart__input_size" type="number" value="2"></div>
+                    </div>
+                    <img class="b-productInCart__closeBtn b-productInCart__closeBtn_size" src="img/close.svg" alt="">
+                </div>
+                
+            </div>
+            <div class="cartBtnS">
+                <button>Clear shopping cart</button>
+                <button>Continue shopping</button>
+            </div>
+        </div>
+        <div class="orderingBlock">
+            <form class="shippingAdress">
+                <div>SHIPPING ADRESS</div>
+                <input type="text" placeholder="Bangladesh">
+                <input type="text" placeholder="State">
+                <input type="text" placeholder="Postcode / Zip">
+                <input class="quoteBtn" type="submit" value="Get a quote">
+            </form>
+            <div class="totalPrice">
+                <div class="subTotal">SUB TOTAL
+                    <span>$900</span>
+                </div>
+                <div class="grandTotal">GRAND TOTAL
+                    <span>$900</span>
+                </div>
+                <hr>
+                <button>PROCEED TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="subscribeBackground">
+        <div class="subscribe">
+            <div class="container subscribeWrap">
+                <div class="subscribeLeft">
+                    <img src="img/subscribe-user.png" alt="">
+                    <div>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum</span>“</div>
+                </div>
+                <div class="subscribeRight">
+                    <h3>SUBSCRIBE</h3>
+                    <div class="SubscribeText">FOR OUR NEWLETTER AND PROMOTION</div>
+                    <form name="subscribe">
+                        <input class="SubscribeInput" type="text" placeholder="Enter Your Email" pattern="^([a-z0-9\.-_]+)(@)([a-z0-9-]+)(\.)([a-z]{2,})$">
+                        <input class="SubscribeSubmit" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy;&nbsp;2021 Brand All Rights Reserved.
+                </div>
+                <div class="socialItems">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
