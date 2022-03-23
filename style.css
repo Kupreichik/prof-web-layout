@@ -97,9 +97,9 @@ body {
 }
 
 header {
-  height: 75px;
+  height: 74px;
   background-color: #222222;
-  padding: 16px 18px;
+  padding: 17px 16px;
   box-sizing: border-box;
 }
 
@@ -140,15 +140,17 @@ header .container {
   }
 }
 .searchIcon {
-  margin-left: 41px;
+  margin-left: 37px;
 }
 
 .userIcons {
-  margin-left: 25px;
+  margin-left: 22px;
 }
 
 .cart {
-  margin-left: 42px;
+  margin-left: 39px;
+  margin-right: 9px;
+  margin-top: 10px;
 }
 
 .cartIconWrap {
@@ -165,7 +167,7 @@ header .container {
   text-align: center;
   position: absolute;
   top: -22px;
-  right: -11px;
+  right: 0;
   font-weight: 400;
   font-size: 12px;
   line-height: 19px;
@@ -1143,31 +1145,31 @@ h4 {
   }
 }
 
-.cartTitle {
+.title {
   background-color: #F8F3F4;
   height: 148px;
   color: #F16D7F;
   text-align: center;
 }
 @media (min-width: 540px) {
-  .cartTitle {
+  .title {
     text-align: left;
   }
 }
-.cartTitle h1 {
+.title h1 {
   font-size: 24px;
   font-weight: 400;
   margin-top: 0;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 @media (min-width: 540px) {
-  .cartTitle h1 {
+  .title h1 {
     padding-top: 60px;
     padding-left: 16px;
   }
 }
 @media (min-width: 1172px) {
-  .cartTitle h1 {
+  .title h1 {
     padding-left: 0;
   }
 }
@@ -1354,4 +1356,155 @@ h4 {
   .orderingBlock .totalPrice button {
     width: 100%;
   }
+}
+
+@media (min-width: 768px) {
+  .registrationMain {
+    display: flex;
+    justify-content: center;
+    margin: 0 7px 96px;
+  }
+}
+@media (min-width: 1140px) {
+  .registrationMain {
+    justify-content: left;
+  }
+}
+
+.registrationForm {
+  padding: 40px 8.5px 0;
+  font-weight: 300;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1140px) {
+  .registrationForm {
+    padding-top: 64px;
+    margin-left: 0;
+    margin-right: 128px;
+  }
+}
+@media (min-width: 1172px) {
+  .registrationForm {
+    padding-left: 0;
+  }
+}
+.registrationForm .registrationCaption {
+  color: #222222;
+  font-size: 16px;
+}
+.registrationForm .registrationInput {
+  width: 358px;
+  height: 45px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 13px;
+  color: #B1B1B1;
+  margin-top: 20.44px;
+  padding-left: 17px;
+  border: 1px solid #A4A4A4;
+}
+@media (max-width: 374px) {
+  .registrationForm .registrationInput {
+    width: 100%;
+  }
+}
+.registrationForm .registrationGender {
+  margin-top: 31.5px;
+  margin-bottom: 33.8px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+.registrationForm .registrationGender input[type=radio i] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #A4A4A4;
+  box-sizing: border-box;
+  margin: 0 10px 0 0;
+}
+.registrationForm .registrationGender input[type=radio i]:checked {
+  background-color: #838383;
+  border: 3px solid #A4A4A4;
+}
+.registrationForm .registrationGender label {
+  margin-right: 20px;
+  color: #000000;
+  line-height: 13px;
+}
+.registrationForm .passwordRecommends {
+  font-size: 13px;
+  color: #B1B1B1;
+  margin-top: 12px;
+  margin-bottom: 39px;
+}
+.registrationForm .registrationBtnWrap {
+  position: relative;
+}
+.registrationForm .registrationBtn {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  height: 50px;
+  width: 167px;
+  box-sizing: border-box;
+  background-color: #F16D7F;
+  border: none;
+  text-align: start;
+  padding-left: 28px;
+}
+.registrationForm .registrationBtn_arrow {
+  position: absolute;
+  left: 120px;
+  top: 20px;
+}
+
+.loyalityBlock {
+  padding: 40px 9px 96px;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 375px;
+}
+@media (min-width: 1140px) {
+  .loyalityBlock {
+    padding-top: 64px;
+    margin: 0;
+    max-width: 100%;
+    font-size: 24px;
+  }
+}
+.loyalityBlock h3 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: 300;
+  font-size: 16px;
+}
+@media (min-width: 1140px) {
+  .loyalityBlock h3 {
+    font-size: 24px;
+  }
+}
+.loyalityBlock p {
+  margin-bottom: 22px;
+}
+.loyalityBlock ul {
+  margin: 0;
+  list-style-type: none;
+  list-style-image: url(img/V.svg);
+  padding-inline-start: 29px;
+}
+.loyalityBlock li:not(:last-child) {
+  margin-bottom: 23px;
+}
+.loyalityBlock li {
+  padding-left: 23px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f3c9a0c818.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="leftBar">
+                <img src="img/logo.svg" alt="logo">
+                <img class="searchIcon" src="img/search.svg" alt="search">
+            </div>
+            <nav>
+                <img src="img/bars.svg" alt="bars">
+                <img class="userIcons" src="img/user.svg" alt="user">
+                <span class="cartIconWrap">
+                    <img class="userIcons cart" src="img/cart.svg" alt="cart">
+                    <span class="userIcons">5</span>
+                </span>
+            </nav>
+        </div>
+    </header>
+    <div class="title">
+        <div class="container">
+            <h1>REGISTRATION</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="registrationMain">
+            <form class="registrationForm">
+                <div class="registrationCaption">Your Name</div>
+                <input class="registrationInput" type="text" placeholder="First Name">
+                <input class="registrationInput" type="text" placeholder="Last Name">
+                <div class="registrationGender">
+                    <input id="gender1" type="radio" name="gender" value="Male"><label for="gender1">Male</label>
+                    <input id="gender2" type="radio" name="gender" value="Female"><label for="gender2">Female</label>
+                    <input id="gender3" type="radio" name="gender" value="Other"><label for="gender3">Other</label>
+                </div>
+                <div class="registrationCaption">Login details</div>
+                <input class="registrationInput" type="text" placeholder="Email">
+                <input class="registrationInput" type="text" placeholder="Password">
+                <div class="passwordRecommends">Please use 8 or more characters, with at least 1 number and a mixture of uppercase
+                    and lowercase
+                    letters</div>
+                <div class="registrationBtnWrap">
+                    <input class="registrationBtn" type="submit" value="JOIN NOW">
+                    <img class="registrationBtn_arrow" src="img/arrow-right.svg" alt="">
+                </div>
+            </form>
+            <div class="loyalityBlock">
+                <h3>LOYALTY HAS ITS PERKS</h3>
+                <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as
+                    you join:</p>
+                <ul>
+                    <li>15% off welcome offer</li>
+                    <li>Free shipping, returns and exchanges on all orders</li>
+                    <li>$10 off a purchase on your birthday</li>
+                    <li>Early access to products</li>
+                    <li>Exclusive offers &amp;&nbsp;rewards</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="subscribeBackground">
+        <div class="subscribe">
+            <div class="container subscribeWrap">
+                <div class="subscribeLeft">
+                    <img src="img/subscribe-user.png" alt="">
+                    <div>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum</span>“</div>
+                </div>
+                <div class="subscribeRight">
+                    <h3>SUBSCRIBE</h3>
+                    <div class="SubscribeText">FOR OUR NEWLETTER AND PROMOTION</div>
+                    <form name="subscribe">
+                        <input class="SubscribeInput" type="text" placeholder="Enter Your Email" pattern="^([a-z0-9\.-_]+)(@)([a-z0-9-]+)(\.)([a-z]{2,})$">
+                        <input class="SubscribeSubmit" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy;&nbsp;2021 Brand All Rights Reserved.
+                </div>
+                <div class="socialItems">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
